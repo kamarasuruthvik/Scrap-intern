@@ -4,11 +4,7 @@ document.getElementById('input').addEventListener("change", (event) => {
     selectedFile = event.target.files[0];
 })
 
-let data=[{
-    "name":"jayanth",
-    "data":"scd",
-    "abc":"sdef"
-}]
+let data=[];
 
 
 document.getElementById('button').addEventListener("click", () => {
@@ -23,8 +19,26 @@ document.getElementById('button').addEventListener("click", () => {
          workbook.SheetNames.forEach(sheet => {
               let rowObject = XLSX.utils.sheet_to_row_object_array(workbook.Sheets[sheet]);
               console.log(rowObject);
-              document.getElementById("jsondata").innerHTML = JSON.stringify(rowObject,undefined,4)
+              makeTable(rowObject);
+            //   document.getElementById("jsondata").innerHTML = JSON.stringify(rowObject,undefined,4)
          });
         }
     }
 });
+
+function makeTable(info){
+    myTable=document.getElementById('myTable');
+    console.log(info);
+    for(let i=0;i<info.length;i++){
+        myTable.innerHTML+=`<tr>
+        <td>
+        ${info[i]['Company Name']}
+        </td>
+        <td><a href="${info[i]['linkedIn page link']}">
+        ${info[i]['linkedIn page link']}
+        <a>
+        </td>
+        </tr>`
+        console.log(info[i]['Company Name']);
+    }
+}
