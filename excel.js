@@ -23,6 +23,7 @@ document.getElementById('button').addEventListener("click", () => {
              if(error==='Success!'){
               makeTable(rowObject);
              }
+
             //   document.getElementById("jsondata").innerHTML = JSON.stringify(rowObject,undefined,4)
          });
         }
@@ -46,9 +47,16 @@ function validateObject(info){
 }
 function makeTable(info){
     myTable=document.getElementById('myTable');
-    // console.log(info);
+    inter=document.getElementById('inner')
+    console.log(info);
+    inter.innerHTML=`<tr>
+    <th scope="col">#</th>
+    <th scope="col">Company Name</th>
+    <th scope="col">Linkedin link</th>
+  </tr>`
     for(let i=0;i<info.length;i++){
         myTable.innerHTML+=`<tr>
+        <th scope="row">${i+1}</th>
         <td>
         ${info[i]['Company Name']}
         </td>
@@ -57,6 +65,6 @@ function makeTable(info){
         <a>
         </td>
         </tr>`
-        // console.log(info[i]['Company Name']);
+        console.log(info[i]['Company Name']);
     }
 }

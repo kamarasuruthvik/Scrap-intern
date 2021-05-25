@@ -1,70 +1,64 @@
-.navbar {
-    transition: all 0.4s;
+header {
+    text-align: center;
+    height:70px;
+    background-color: #45526c;
+    padding-top: 10px ;
+    padding-bottom: 20px;
+    color: whitesmoke;
+    font-family: 'Pattaya', sans-serif;
 }
-
-.navbar .nav-link {
-    color: #fff;
+h2 {
+    font-weight: bold;
 }
-
-.navbar .nav-link:hover,
-.navbar .nav-link:focus {
-    color: #fff;
-    text-decoration: none;
+.dow {
+    text-align: center; 
+    font-family : 'Source Code Pro', monospace;
+    margin-top: 20px;
+    margin-bottom:10px ;
 }
-
-.navbar .navbar-brand {
-    color: #fff;
+.des {
+    margin: 20px 20px 20px 20px;
+    font-family: 'Roboto', sans-serif;
 }
-
-
-/* Change navbar styling on scroll */
-.navbar.active {
-    background: #fff;
-    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.navbar.active .nav-link {
-    color: #555;
-}
-
-.navbar.active .nav-link:hover,
-.navbar.active .nav-link:focus {
-    color: #555;
-    text-decoration: none;
-}
-
-.navbar.active .navbar-brand {
-    color: #555;
-}
-
-
-/* Change navbar styling on small viewports */
-@media (max-width: 991.98px) {
-    .navbar {
-        background: #fff;
-    }
-
-    .navbar .navbar-brand, .navbar .nav-link {
-        color: #555;
-    }
-}
-
-
-
-/*
-*
-* ==========================================
-* FOR DEMO PURPOSES
-* ==========================================
-*
-*/
-.text-small {
-    font-size: 0.9rem !important;
-}
-
-
 body {
-    min-height: 110vh;
-    background-color: #4ca1af;
-    background-image: linear-gradient(135deg, #4ca1af 0%, #c4e0e5 100%);
+    background-color: #faf1e6;
 }
+thead {
+    background-color: #f29191;
+}
+tbody {
+    background-color: #d1d9d9;
+}
+#footer{
+    text-align: center;
+    height:80px;
+    background-color: #45526c;
+    padding-top: 10px ;
+    padding-bottom: 20px;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+  }
+  svg {
+      margin: 0px 10px 0px 10px;
+     
+  }
+  li {
+      margin-top: 10px;
+  }
+  #error-container {
+    
+    text-align: center;
+    margin-bottom: 10px;
+    font-family : 'Source Code Pro', monospace;
+    font-size: 30px ;
+  }
+ 
+.my-custom-scrollbar {
+    position: relative;
+    height: 500px;
+    overflow: auto;
+    }
+    .table-wrapper-scroll-y {
+    display: block;
+    }
