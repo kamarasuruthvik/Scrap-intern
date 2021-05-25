@@ -1,5 +1,5 @@
 let selectedFile;
-console.log(window.XLSX);
+// console.log(window.XLSX);
 document.getElementById('input').addEventListener("change", (event) => {
     selectedFile = event.target.files[0];
 })
@@ -15,14 +15,15 @@ document.getElementById('button').addEventListener("click", () => {
         fileReader.onload = (event)=>{
          let data = event.target.result;
          let workbook = XLSX.read(data,{type:"binary"});
-         console.log(workbook);
+        //  console.log(workbook);
          workbook.SheetNames.forEach(sheet => {
               let rowObject = XLSX.utils.sheet_to_row_object_array(workbook.Sheets[sheet]);
-              console.log(rowObject);
-              var error= validateObject(rowObject);
-              if(error==='Success!'){
-               makeTable(rowObject);
-              }
+            //   console.log(rowObject);
+             var error= validateObject(rowObject);
+             if(error==='Success!'){
+              makeTable(rowObject);
+             }
+
             //   document.getElementById("jsondata").innerHTML = JSON.stringify(rowObject,undefined,4)
          });
         }
