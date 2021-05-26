@@ -34,10 +34,11 @@ function validateObject(info){
     var currentError=null;
     console.log(info);
     try{
-        if(info[0]['linkedIn page link']===undefined || info[0]['Company Name']===undefined)
+        for(var i=0;i<info.length;i++){
+        if(info[i]['linkedIn page link']===undefined || info[i]['Company Name']===undefined)
             throw "Please enter the fields correctly. If facing difficulty then use the sample template provided above and fill it!";
-        else
-            throw "Success!";
+        }
+        throw('Success!');
     }
     catch(error){
         errorMessage.innerHTML=error;
