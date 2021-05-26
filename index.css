@@ -17,7 +17,11 @@ h2 {
     margin-bottom:10px ;
 }
 .des {
-    margin: 20px 20px 20px 20px;
+    margin-top: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 1.125rem;
+    text-align: justify;
     font-family: 'Roboto', sans-serif;
 }
 body {
@@ -29,7 +33,8 @@ thead {
 tbody {
     background-color: #d1d9d9;
 }
-#footer{
+
+footer{
     text-align: center;
     height:80px;
     background-color: #45526c;
@@ -39,9 +44,10 @@ tbody {
     font-family: 'Roboto', sans-serif;
     margin-top: 30px;
   }
-  svg {
+  i{
+      color: whitesmoke;
       margin: 0px 10px 0px 10px;
-     
+    
   }
   li {
       margin-top: 10px;
