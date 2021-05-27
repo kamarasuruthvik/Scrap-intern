@@ -1,0 +1,70 @@
+header {
+    text-align: center;
+    height:70px;
+    background-color: #45526c;
+    padding-top: 10px ;
+    padding-bottom: 20px;
+    color: whitesmoke;
+    font-family: 'Pattaya', sans-serif;
+}
+h2 {
+    font-weight: bold;
+}
+.dow {
+    text-align: center; 
+    font-family : 'Source Code Pro', monospace;
+    margin-top: 20px;
+    margin-bottom:10px ;
+}
+.des {
+    margin-top: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 1.125rem;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #faf1e6;
+}
+thead {
+    background-color: #f29191;
+}
+tbody {
+    background-color: #d1d9d9;
+}
+
+footer{
+    text-align: center;
+    height:80px;
+    background-color: #45526c;
+    padding-top: 10px ;
+    padding-bottom: 20px;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+  }
+  i{
+      color: whitesmoke;
+      margin: 0px 10px 0px 10px;
+    
+  }
+  li {
+      margin-top: 10px;
+  }
+  #error-container {
+    
+    text-align: center;
+    margin-bottom: 10px;
+    font-family : 'Source Code Pro', monospace;
+    font-size: 30px ;
+  }
+ 
+.my-custom-scrollbar {
+    position: relative;
+    height: 500px;
+    overflow: auto;
+    }
+    .table-wrapper-scroll-y {
+    display: block;
+    }
