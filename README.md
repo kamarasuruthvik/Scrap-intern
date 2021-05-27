@@ -13,7 +13,7 @@ File upload to the client side website. Run button to intiate the process of web
 
 
 ## contributors:
-* ##### K.Ruthvik
+* ##### Ruthvik
 * ##### Vishnu Reddy
 * ##### R Sai Balaji
 * ##### Manjunatha Kapil
